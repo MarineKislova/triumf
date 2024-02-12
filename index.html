@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TRIUMF</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="container">
+          <!-- HEADER -->
+          <div class="header">
+            <div class="container">
+              <div class="header__body">
+                <nav class="header__nav">
+                  <div class="header__nav triumf">
+                    <a href="#">ТРИУМФ</a>
+                  </div>
+                  <div class="header__nav-menu">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Наши партнеры</a></li>
+                    <li><a href="#">Каталог продукции</a></li>
+                    <li><a href="#">Приемущества</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </div>
+                  <div class="header__nav-contacts">
+                    <ul>
+                      <li>г. Нур-Султан, ул.</li>
+                      <li>Тлендиева 24</li>
+                      <li>металлоцех бокс 1,2</li>
+                      <li>ватсап <span>+77071093609</span></li>
+                      <li>телефон <span>+77074449968</span></li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="header__title">
+                  <div class="header__text">
+                    <h1>
+                      Металлоизделия <br />
+                      и художественная <br />
+                      ковка
+                    </h1>
+                    <p>
+                      Эксклюзивные предметы экстерьера, <br />
+                      мебель, скульптура, подарки
+                    </p>
+                    <p>
+                      Есть идея, а с эксклюзивом никто <br />
+                      не может попасть в точку?
+                    </p>
+                  </div>
+                  <div class="header__button">
+                    <button
+                      type="button"
+                      data-openmodalform
+                      class="btn btn-idea"
+                    >
+                      Обсудить идею
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Header -->
+
+          <!-- About company -->
+          <div class="about-company">
+            <div class="container">
+              <div class="about-company__row">
+                <div class="about-company__title">
+                  <h2>О компании</h2>
+                </div>
+                <div class="about-company__body">
+                  <div class="about-company__text">
+                    <p>
+                      Наша компания работает на рынке с 2014 года. <br />
+                      На сегодняшний день мы специализируемся <br />
+                      на производстве металлоизделий на заказ и <br />
+                      металлоконструкций по индивидуальным <br />
+                      чертежам и образцам: -художественная ковка <br />
+                      -услуги кузнеца <br />
+                      -сварочные работы <br />
+                      -монтаж и демонтаж <br />
+                      -аргонная сварка <br />
+                      -изготовление дизайнов любой сложности <br />
+                      -полимерное покрытие <br />
+                    </p>
+                    <div class="about-company__button">
+                      <button
+                        type="button"
+                        data-openmodalform
+                        class="btn btn-idea"
+                      >
+                        Обсудить идею
+                      </button>
+                    </div>
+                  </div>
+                  <div class="about-company__img">
+                    <img src="img/company/company.png" alt="" srcset="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END About company -->
+
+          <!-- Partners -->
+          <div class="partners">
+            <div class="container">
+              <div class="partners__row">
+                <div class="partners__title">
+                  <h2>Наши партнеры</h2>
+                </div>
+                <div class="partners__list">
+                  <div class="partners__list-item">DOOR HAN</div>
+                  <div class="partners__list-item">ТОО Ушаково АГРО</div>
+                  <div class="partners__list-item">ТОО "Нуртуган 2030"</div>
+                </div>
+                <div class="partners__discount">
+                  <div class="partners__discount-item">
+                    <img src="img/partners/kaspi_red.png" alt="Kaspi_Red" />
+                  </div>
+                  <div class="partners__discount-item">
+                    <img src="img/partners/discount.png" alt="discount" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END Partners -->
+        </div>
+
+        <!-- ModalForm-->
+        <div class="modal-form">
+            <div class="modal-form__content">
+              <div class="modal-form__contact">
+                <p>
+                  г. Нур-Султан, ул. <br />
+                  Тлендиева 24 <br />металлоцех бокс 1,2 <br />ватсап
+                  <span>+77071093609</span> 
+                  <br />
+                  телефон <span>+77074449968</span> 
+                </p>
+              </div>
+              <form class="modal-form__forma" action="#">
+                <div data-closemodalform class="modal-form__close">&times;</div>
+                <div class="modal-form__title">
+                  Заполните форму <br />
+                  и мы свяжемся с вами
+                </div>
+                <input
+                  required
+                  placeholder="Ваше имя"
+                  name="name"
+                  type="text"
+                  class="modal-form__input"
+                />
+                <input
+                  required
+                  placeholder="Ваше телефон"
+                  name="phoneNumber"
+                  type="tel"
+                  class="modal-form__input"
+                />
+                <input
+                  required
+                  placeholder="Введите Ваш e-mail"
+                  name="mail"
+                  type="email"
+                  class="modal-form__input"
+                />
+                <input
+                  required
+                  placeholder="Комментарий"
+                  name="comment"
+                  type="text"
+                  class="modal-form__input"
+                />
+                <div class="modal-form__pesonaldata">
+                  Нажимая на кнопку "Отправить, Вы даете согласие на обработку
+                  персональных данных
+                </div>
+                <div class="modal-form__btns">
+                  <button
+                    type="button"
+                    data-closemodalform
+                    class="btn btn-idea"
+                  >
+                    Отправить
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        <!-- END ModalForm -->
+
+        <!-- Footer -->
+        <!-- <div class="footer">
+          <div class="container">
+            <div class="footer__title triumf">
+              <a href="#">ТРИУМФ</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- END Footer -->
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="footer__title triumf">
+            <a href="#">ТРИУМФ</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- END Footer -->
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

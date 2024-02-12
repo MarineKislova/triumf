@@ -1,0 +1,116 @@
+.modal-form {
+  /* ------- подложка модального окна ------- */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__content {
+    max-width: 870px;
+    max-height: 748px;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    // padding: 40px;
+    background-color: rgb(30, 29, 29);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    // max-height: 80vh;
+    // overflow-y: auto;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 348px;
+    height: 648px;
+    background-image: url(../img/modal/1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    p {
+      padding-left: 31px;
+      padding-bottom: 15px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__forma {
+    max-height: 748px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 434px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 30px;
+    color: #f6f3f3;
+    opacity: 0.5;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    margin: 22px auto;
+    width: 434px;
+    height: 42px;
+    padding: 0 20px;
+    // border: none;
+    text-align: center;
+    font-size: small;
+    opacity: 0.6;
+    // outline: none;
+    border: 3px solid #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+
+    &:nth-child(6) {
+      height: 77px;
+    }
+  }
+
+  &__pesonaldata {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+    margin-bottom: 64px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+//   .btn-min2 {
+//     width: 15vh;
+//     height: 4vh;
+//     background-color: rgba(138, 127, 142, 0.8);
+//     cursor: pointer;
+//   }
