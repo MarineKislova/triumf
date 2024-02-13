@@ -44,7 +44,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function hideCatalog() {
     tabContentCatalog.forEach((item) => {
-      item.style.display = "none";
+      item.classList.remove("show");
+      item.classList.add("hide");
     });
     tablinksCatalog.forEach((item) => {
       item.classList.remove("tablink_active");
@@ -52,7 +53,8 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   function showCatalog(i = 0) {
-    tabContentCatalog[i].style.display = "block";
+    tabContentCatalog[i].classList.remove("hide");
+    tabContentCatalog[i].classList.add("show");
     tablinksCatalog[i].classList.add("tablink_active");
   }
 

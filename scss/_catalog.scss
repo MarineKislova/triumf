@@ -32,10 +32,13 @@
   }
 
   &__content {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     margin-top: 104px;
+
+    &_body {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
     // background-image: url(../img/catalog/visors/Frame_1.png);
     &_image {
       margin-top: 65px;
@@ -46,6 +49,14 @@
         height: 100%;
       }
     }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
   }
 }
 .container {
