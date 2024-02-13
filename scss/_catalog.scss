@@ -1,0 +1,59 @@
+.catalog {
+  margin-top: 205px;
+
+  &__row {
+    padding: 0px 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 67px;
+    button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 104px;
+    // background-image: url(../img/catalog/visors/Frame_1.png);
+    &_image {
+      margin-top: 65px;
+      width: 300px;
+      height: 300px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.container {
+}
+.tablink {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #ffffff;
+}
