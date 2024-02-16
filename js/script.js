@@ -72,4 +72,37 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  //   modal-request
+  const showModalRequest = document.querySelectorAll("[data-openrequestform]");
+  const hideModalRequest = document.querySelectorAll("[data-closerequestform]");
+  const modalRequest = document.querySelector(".modal-request");
+
+  function openModalRequest() {
+    modalRequest.style.display = "block";
+  }
+
+  function closeModalRequest() {
+    modalRequest.style.display = "none";
+  }
+
+  showModalRequest.forEach((btn) => {
+    btn.addEventListener("click", openModalRequest);
+  });
+
+  hideModalRequest.forEach((btn) => {
+    btn.addEventListener("click", closeModalRequest);
+  });
+
+  modalRequest.addEventListener("click", (e) => {
+    if (e.target === modalRequest) {
+      closeModalRequest();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeModalRequest();
+    }
+  });
 });
