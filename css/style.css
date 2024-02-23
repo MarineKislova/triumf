@@ -133,7 +133,7 @@ body {
   background: url("../img/header/header.png") center center no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 764px;
+  height: calc(364px + 400 * (100vw - 320px) / 1600);
   max-width: 100%;
   padding: 15px 27px 0px 33px;
 }
@@ -152,6 +152,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -159,20 +161,20 @@ body {
 .header__nav-menu li {
   text-decoration: none;
   list-style-type: none;
-  margin-left: 16px;
+  margin-left: calc(10px + 6 * (100vw - 320px) / 1600);
 }
 .header__nav-menu li:first-child {
-  margin-left: 35px;
+  margin-left: calc(15px + 20 * (100vw - 320px) / 1600);
 }
 .header__nav-menu a {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: calc(10px + 8 * (100vw - 320px) / 1600);
+  line-height: calc(14px + 8 * (100vw - 320px) / 1600);
   color: rgb(255, 255, 255);
 }
 .header__nav-contacts {
   font-weight: 500;
-  font-size: 16px;
+  font-size: calc(10px + 6 * (100vw - 320px) / 1600);
   color: rgb(255, 255, 255);
 }
 .header__nav-contacts span {
@@ -191,8 +193,8 @@ body {
 .header__text h1 {
   /* Металлоизделия и художественная ковка */
   font-weight: 700;
-  font-size: 52px;
-  line-height: 63px;
+  font-size: calc(30px + 22 * (100vw - 320px) / 1600);
+  line-height: calc(36px + 27 * (100vw - 320px) / 1600);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,8 +204,8 @@ body {
 }
 .header__text p {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: calc(20px + 4 * (100vw - 320px) / 1600);
+  line-height: calc(23px + 6 * (100vw - 320px) / 1600);
   margin-top: 26px;
 }
 .header__button {
@@ -212,12 +214,16 @@ body {
 
 .triumf {
   font-weight: 700;
+  font-size: calc(26px + 30 * (100vw - 320px) / 1600);
+  line-height: calc(30px + 38 * (100vw - 320px) / 1600);
   font-size: 56px;
   line-height: 68px;
 }
 .triumf a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-size: calc(26px + 30 * (100vw - 320px) / 1600);
+  line-height: calc(30px + 38 * (100vw - 320px) / 1600);
   cursor: pointer;
 }
 
@@ -233,8 +239,8 @@ body {
 
 .btn-idea {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(18px + 2 * (100vw - 320px) / 1600);
+  line-height: calc(22px + 2 * (100vw - 320px) / 1600);
   color: rgb(0, 0, 0);
   /* Rectangle 12 */
 }

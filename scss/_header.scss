@@ -1,13 +1,17 @@
+@import "_mixin.scss";
+
 .header {
-    width: 100%;
+  width: 100%;
   &__body {
     display: flex;
     flex-direction: column;
     background: url("../img/header/header.png") center center no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    height: 764px;
+    @include adaptiv-value("height", 764, 364, 0);
+    // height: 764px;
     max-width: 100%;
+
     padding: 15px 27px 0px 33px;
   }
 
@@ -19,26 +23,27 @@
 
   &__nav-menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     li {
       text-decoration: none;
       list-style-type: none;
-      margin-left: 16px;
+      @include adaptiv-value("margin-left", 16, 10, 0);
       &:first-child {
-        margin-left: 35px;
+        @include adaptiv-value("margin-left", 35, 15, 0);
       }
     }
     a {
       font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
+      @include adaptiv-value("font-size", 18, 10, 0);
+      @include adaptiv-value("line-height", 22, 14, 0);
       color: rgba(255, 255, 255, 1);
     }
   }
 
   &__nav-contacts {
     font-weight: 500;
-    font-size: 16px;
+    @include adaptiv-value("font-size", 16, 10, 0);
     color: rgba(255, 255, 255, 1);
     span {
       font-weight: 700;
@@ -55,15 +60,19 @@
     h1 {
       /* Металлоизделия и художественная ковка */
       font-weight: 700;
-      font-size: 52px;
-      line-height: 63px;
+      @include adaptiv-value("font-size", 52, 30, 0);
+      @include adaptiv-value("line-height", 63, 36, 0);
+      //   font-size: 52px;
+      //   line-height: 63px;
       display: flex;
       align-items: center;
     }
     p {
       font-weight: 500;
-      font-size: 24px;
-      line-height: 29px;
+      @include adaptiv-value("font-size", 24, 20, 0);
+      @include adaptiv-value("line-height", 29, 23, 0);
+      //   font-size: 24px;
+      //   line-height: 29px;
       margin-top: 26px;
     }
   }
@@ -76,11 +85,15 @@
 }
 .triumf {
   font-weight: 700;
+  @include adaptiv-value("font-size", 56, 26, 0);
+  @include adaptiv-value("line-height", 68, 30, 0);
   font-size: 56px;
   line-height: 68px;
   a {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
+    @include adaptiv-value("font-size", 56, 26, 0);
+    @include adaptiv-value("line-height", 68, 30, 0);
     cursor: pointer;
   }
 }
@@ -94,8 +107,10 @@
 }
 .btn-idea {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  @include adaptiv-value("font-size", 20, 18, 0);
+  @include adaptiv-value("line-height", 24, 22, 0);
+  //   font-size: 20px;
+  //   line-height: 24px;
   color: rgba(0, 0, 0, 1);
   /* Rectangle 12 */
 }
