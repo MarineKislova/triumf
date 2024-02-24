@@ -2,3 +2,5 @@ package.json
 gitinfoTriumf.txt
 .eslintrc.js
 *.fig
+package-lock.json
+/node_modules
