@@ -2,6 +2,7 @@
 
 .header {
   width: 100%;
+  //   padding: 10px;
   &__body {
     display: flex;
     flex-direction: column;
@@ -11,14 +12,18 @@
     @include adaptiv-value("height", 764, 364, 0);
     // height: 764px;
     max-width: 100%;
-
-    padding: 15px 27px 0px 33px;
+    padding-left: 30px;
+    padding-right: 30px;
+    // padding: 15px 27px 0px 33px;
   }
 
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1280px) {
+      justify-content: flex-start;
+    }
   }
 
   &__nav-menu {
@@ -39,6 +44,24 @@
       @include adaptiv-value("line-height", 22, 14, 0);
       color: rgba(255, 255, 255, 1);
     }
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &__burger-menu {
+    display: none;
+    li {
+      text-decoration: none;
+      list-style-type: none;
+      @include adaptiv-value("margin-left", 16, 10, 0);
+    }
+    a {
+      font-weight: 500;
+      @include adaptiv-value("font-size", 18, 10, 0);
+      @include adaptiv-value("line-height", 22, 14, 0);
+      color: rgba(255, 255, 255, 1);
+    }
   }
 
   &__nav-contacts {
@@ -48,12 +71,15 @@
     span {
       font-weight: 700;
     }
+    @media (max-width: 1280px) {
+      @include adaptiv-value("margin-left", 750, 10, 0);
+    }
   }
 
   &__title {
     display: flex;
     flex-direction: column;
-    margin-top: 26px;
+    @include adaptiv-value("margin-top", 26, 16, 0);
   }
 
   &__text {
@@ -73,33 +99,35 @@
       @include adaptiv-value("line-height", 29, 23, 0);
       //   font-size: 24px;
       //   line-height: 29px;
-      margin-top: 26px;
+      @include adaptiv-value("margin-top", 26, 16, 0);
     }
   }
 
   &__button {
     margin: 40px 62px auto 142px;
+    @include adaptiv-value("margin-top", 26, 16, 0);
+    @include adaptiv-value("margin-top", 26, 16, 0);
+    @include adaptiv-value("margin-top", 26, 16, 0);
   }
 }
 .container {
 }
 .triumf {
   font-weight: 700;
-  @include adaptiv-value("font-size", 56, 26, 0);
-  @include adaptiv-value("line-height", 68, 30, 0);
+  //   @include adaptiv-value("font-size", 56, 20, 0);
+  //   @include adaptiv-value("line-height", 68, 25, 0);
   font-size: 56px;
   line-height: 68px;
   a {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
-    @include adaptiv-value("font-size", 56, 26, 0);
-    @include adaptiv-value("line-height", 68, 30, 0);
+    @include adaptiv-value("font-size", 56, 20, 0);
+    @include adaptiv-value("line-height", 68, 25, 0);
     cursor: pointer;
   }
 }
 .btn {
-  width: 250px;
-  height: 50px;
+    @include adaptiv-value("width", 250, 150, 0);
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(255, 255, 255, 1);
   box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5);
@@ -109,8 +137,5 @@
   font-weight: 500;
   @include adaptiv-value("font-size", 20, 18, 0);
   @include adaptiv-value("line-height", 24, 22, 0);
-  //   font-size: 20px;
-  //   line-height: 24px;
   color: rgba(0, 0, 0, 1);
-  /* Rectangle 12 */
 }

@@ -135,7 +135,8 @@ body {
   background-size: cover;
   height: calc(364px + 400 * (100vw - 320px) / 1600);
   max-width: 100%;
-  padding: 15px 27px 0px 33px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .header__nav {
   display: -webkit-box;
@@ -147,6 +148,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 1280px) {
+  .header__nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 .header__nav-menu {
   display: -webkit-box;
@@ -172,6 +180,25 @@ body {
   line-height: calc(14px + 8 * (100vw - 320px) / 1600);
   color: rgb(255, 255, 255);
 }
+@media (max-width: 1280px) {
+  .header__nav-menu {
+    display: none;
+  }
+}
+.header__burger-menu {
+  display: none;
+}
+.header__burger-menu li {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: calc(10px + 6 * (100vw - 320px) / 1600);
+}
+.header__burger-menu a {
+  font-weight: 500;
+  font-size: calc(10px + 8 * (100vw - 320px) / 1600);
+  line-height: calc(14px + 8 * (100vw - 320px) / 1600);
+  color: rgb(255, 255, 255);
+}
 .header__nav-contacts {
   font-weight: 500;
   font-size: calc(10px + 6 * (100vw - 320px) / 1600);
@@ -179,6 +206,11 @@ body {
 }
 .header__nav-contacts span {
   font-weight: 700;
+}
+@media (max-width: 1280px) {
+  .header__nav-contacts {
+    margin-left: calc(10px + 740 * (100vw - 320px) / 1600);
+  }
 }
 .header__title {
   display: -webkit-box;
@@ -188,7 +220,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 26px;
+  margin-top: calc(16px + 10 * (100vw - 320px) / 1600);
 }
 .header__text h1 {
   /* Металлоизделия и художественная ковка */
@@ -206,30 +238,30 @@ body {
   font-weight: 500;
   font-size: calc(20px + 4 * (100vw - 320px) / 1600);
   line-height: calc(23px + 6 * (100vw - 320px) / 1600);
-  margin-top: 26px;
+  margin-top: calc(16px + 10 * (100vw - 320px) / 1600);
 }
 .header__button {
   margin: 40px 62px auto 142px;
+  margin-top: calc(16px + 10 * (100vw - 320px) / 1600);
+  margin-top: calc(16px + 10 * (100vw - 320px) / 1600);
+  margin-top: calc(16px + 10 * (100vw - 320px) / 1600);
 }
 
 .triumf {
   font-weight: 700;
-  font-size: calc(26px + 30 * (100vw - 320px) / 1600);
-  line-height: calc(30px + 38 * (100vw - 320px) / 1600);
   font-size: 56px;
   line-height: 68px;
 }
 .triumf a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: calc(26px + 30 * (100vw - 320px) / 1600);
-  line-height: calc(30px + 38 * (100vw - 320px) / 1600);
+  font-size: calc(20px + 36 * (100vw - 320px) / 1600);
+  line-height: calc(25px + 43 * (100vw - 320px) / 1600);
   cursor: pointer;
 }
 
 .btn {
-  width: 250px;
-  height: 50px;
+  width: calc(150px + 100 * (100vw - 320px) / 1600);
   background: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
   -webkit-box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5);
@@ -242,7 +274,6 @@ body {
   font-size: calc(18px + 2 * (100vw - 320px) / 1600);
   line-height: calc(22px + 2 * (100vw - 320px) / 1600);
   color: rgb(0, 0, 0);
-  /* Rectangle 12 */
 }
 
 .about-company {

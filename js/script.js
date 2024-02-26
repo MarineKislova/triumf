@@ -3,6 +3,34 @@ window.addEventListener("DOMContentLoaded", () => {
 
   console.log("DOM fully loaded and parsed");
 
+  //burger menu
+
+  const shownMenu = document.querySelector("[data-openMenu]");
+  const parentMenu = document.querySelector(".header__burger-menu");
+  const closeMenu = document.querySelector("[data-closeMenu]");
+
+  function showMenu() {
+    parentMenu.style.display = "block";
+  }
+  function hideMenu() {
+    parentMenu.style.display = "none";
+  }
+
+  shownMenu.addEventListener("click", showMenu);
+  closeMenu.addEventListener("click", hideMenu);
+
+  parentMenu.addEventListener("click", (e) => {
+    if (e.target === parentMenu) {
+      hideMenu();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      hideMenu();
+    }
+  });
+
   //   modalForm
 
   const showModalForm = document.querySelectorAll("[data-openform]");
